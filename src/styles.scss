@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --content-max-width: 1200px;
+    --content-padding-x: 0px;
+    --content-padding-y: 80px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
