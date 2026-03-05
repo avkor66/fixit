@@ -2,10 +2,112 @@
     --content-max-width: 1200px;
     --content-padding-x: 0px;
     --content-padding-y: 80px;
+    --header-height: 80px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     padding: 0;
+    padding-top: var(--header-height);
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Breakpoints */
+/* 1200px - Desktop Large */
+@media screen and (max-width: 1199px) {
+    :root {
+        --content-max-width: 1150px;
+    }
+}
+
+/* 1150px */
+@media screen and (max-width: 1149px) {
+    :root {
+        --content-max-width: 1050px;
+    }
+}
+
+/* 1050px */
+@media screen and (max-width: 1049px) {
+    :root {
+        --content-max-width: 100%;
+        --content-padding-x: 20px;
+        --content-padding-y: 60px;
+    }
+}
+
+/* 820px - Tablet Landscape */
+@media screen and (max-width: 820px) {
+    :root {
+        --content-padding-x: 20px;
+        --content-padding-y: 50px;
+    }
+}
+
+/* 800px */
+@media screen and (max-width: 800px) {
+    :root {
+        --content-padding-y: 40px;
+    }
+}
+
+/* 768px - Tablet Portrait */
+@media screen and (max-width: 768px) {
+    :root {
+        --content-padding-x: 15px;
+        --content-padding-y: 40px;        --header-height: 70px;
+    }
+    
+    body {
+        padding-top: var(--header-height);    }
+}
+
+/* 750px */
+@media screen and (max-width: 750px) {
+    :root {
+        --content-padding-y: 30px;
+    }
+}
+
+/* 700px */
+@media screen and (max-width: 700px) {
+    :root {
+        --content-padding-x: 15px;
+        --content-padding-y: 30px;
+    }
+}
+
+/* 640px - Landscape Mobile */
+@media screen and (max-width: 640px) {
+    :root {
+        --content-padding-x: 15px;
+        --content-padding-y: 25px;
+        --header-height: 65px;
+    }
+    
+    body {
+        padding-top: var(--header-height);
+    }
+}
+
+/* 480px - Mobile */
+@media screen and (max-width: 480px) {
+    :root {
+        --content-padding-x: 12px;
+        --content-padding-y: 20px;
+        --header-height: 60px;
+    }
+    
+    body {
+        padding-top: var(--header-height);
+    }
 }

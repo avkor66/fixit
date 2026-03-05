@@ -5,3 +5,31 @@
     align-items: stretch;
     gap: 40px;
 }
+
+/* 1050px Tablet Landscape */
+@media screen and (max-width: 1049px) {
+    :host {
+        gap: 30px;
+    }
+}
+
+/* 768px Tablet Portrait */
+@media screen and (max-width: 768px) {
+    :host {
+        gap: 25px;
+    }
+}
+
+/* 640px Mobile Landscape */
+@media screen and (max-width: 640px) {
+    :host {
+        gap: 20px;
+    }
+}
+
+/* 480px Mobile */
+@media screen and (max-width: 480px) {
+    :host {
+        gap: 15px;
+    }
+}

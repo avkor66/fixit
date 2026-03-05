@@ -68,3 +68,93 @@
     color: #302E3F;
     font-weight: 600;
 }
+
+/* 1050px Tablet Landscape */
+@media screen and (max-width: 1049px) {
+    .plans-block-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .plans-block-content {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .plans-block-content-item {
+        width: 100%;
+    }
+}
+
+/* 768px Tablet Portrait */
+@media screen and (max-width: 768px) {
+    .plans-block-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .plans-block-container {
+        gap: 30px;
+    }
+    
+    .plans-block-content-item-image {
+        height: 120px;
+    }
+    
+    .plans-block-content-item-title-text {
+        font-size: 20px;
+    }
+}
+
+/* 640px Mobile Landscape */
+@media screen and (max-width: 640px) {
+    .plans-block-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .plans-block-content-item {
+        gap: 15px;
+    }
+    
+    .plans-block-content-item-image {
+        height: 100px;
+    }
+    
+    .plans-block-content-item-title-text {
+        font-size: 18px;
+    }
+}
+
+/* 480px Mobile */
+@media screen and (max-width: 480px) {
+    .plans-block-wrapper {
+        padding: var(--content-padding-y) var(--content-padding-x);
+    }
+    
+    .plans-block-container {
+        gap: 20px;
+    }
+    
+    .plans-block-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
+    .plans-block-content {
+        gap: 15px;
+    }
+    
+    .plans-block-content-item {
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .plans-block-content-item-image {
+        height: 80px;
+    }
+    
+    .plans-block-content-item-title-text {
+        font-size: 16px;
+    }
+}

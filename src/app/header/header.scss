@@ -1,16 +1,24 @@
 header {
     width: 100%;
-    padding: 0 var(--content-padding);
+    padding: 0 var(--content-padding-x);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 15px;
     background-color: #fff;
     width: 100%;
     max-width: var(--content-max-width);
     margin: 0 auto;
+    position: relative;
 }
 .header-logo {
     display: flex;
@@ -72,6 +80,7 @@ header {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-size: 14px;
 }
 .header-buttons .button-black {
     background-color: #000;
@@ -81,4 +90,220 @@ header {
     background-color: #fff;
     color: #000;
     border: 1px solid #000;
+}
+
+.header-burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.header-burger span {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.header-burger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(12px);
+}
+
+.header-burger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.header-burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-12px);
+}
+
+/* 1050px Tablet Landscape */
+@media screen and (max-width: 1049px) {
+    .header-logo h1 {
+        font-size: 20px;
+    }
+    
+    .header-menu ul {
+        gap: 15px;
+    }
+    
+    .header-menu ul li a {
+        font-size: 14px;
+    }
+}
+
+/* 768px Tablet Portrait */
+@media screen and (max-width: 768px) {
+    .header-logo img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .header-logo h1 {
+        font-size: 18px;
+    }
+    
+    .header-menu ul {
+        gap: 10px;
+    }
+    
+    .header-menu ul li a {
+        font-size: 13px;
+    }
+    
+    .header-buttons button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+/* 640px Mobile Landscape */
+@media screen and (max-width: 640px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        padding: 8px 12px;
+    }
+    
+    .header-logo img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .header-logo h1 {
+        font-size: 16px;
+    }
+    
+    .header-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        height: 0;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header-nav.open {
+        max-height: 500px;
+        height: auto;
+        opacity: 1;
+    }
+    
+    .header-menu ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .header-menu ul li a {
+        font-size: 12px;
+    }
+    
+    .header-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .header-buttons button {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 11px;
+    }
+    
+    .header-burger {
+        display: flex;
+    }
+}
+
+/* 480px Mobile */
+@media screen and (max-width: 480px) {
+    .header-container {
+        flex-direction: row;
+        gap: 0;
+        padding: 8px 10px;
+    }
+    
+    .header-logo img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .header-logo h1 {
+        font-size: 14px;
+    }
+    
+    .header-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        height: 0;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header-nav.open {
+        max-height: 400px;
+        height: auto;
+        opacity: 1;
+    }
+    
+    .header-menu {
+        width: 100%;
+    }
+    
+    .header-menu ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .header-menu ul li {
+        width: 100%;
+    }
+    
+    .header-menu ul li a {
+        font-size: 11px;
+    }
+    
+    .header-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+    
+    .header-buttons button {
+        width: 100%;
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+    
+    .header-burger {
+        display: flex;
+    }
+    
+    .header-burger span {
+        width: 20px;
+        height: 2px;
+    }
 }

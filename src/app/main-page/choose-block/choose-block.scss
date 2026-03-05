@@ -79,3 +79,126 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+/* 1050px Tablet Landscape */
+@media screen and (max-width: 1049px) {
+    .choose-block-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .choose-block-content {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .choose-block-content-item {
+        width: 100%;
+    }
+}
+
+/* 768px Tablet Portrait */
+@media screen and (max-width: 768px) {
+    .choose-block-wrapper {
+        padding: var(--content-padding-y) var(--content-padding-x);
+    }
+    
+    .choose-block-container {
+        gap: 30px;
+    }
+    
+    .choose-block-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .choose-block-content-item-image {
+        height: 120px;
+    }
+    
+    .choose-block-content-item-title-text {
+        font-size: 20px;
+    }
+    
+    .choose-block-content-item-title-description {
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    .choose-block-button {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+}
+
+/* 640px Mobile Landscape */
+@media screen and (max-width: 640px) {
+    .choose-block-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .choose-block-content-item {
+        gap: 15px;
+    }
+    
+    .choose-block-content-item-image {
+        height: 100px;
+    }
+    
+    .choose-block-content-item-title-text {
+        font-size: 18px;
+    }
+    
+    .choose-block-content-item-title-description {
+        font-size: 13px;
+    }
+    
+    .choose-block-button {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+}
+
+/* 480px Mobile */
+@media screen and (max-width: 480px) {
+    .choose-block-wrapper {
+        padding: var(--content-padding-y) var(--content-padding-x);
+    }
+    
+    .choose-block-container {
+        gap: 20px;
+    }
+    
+    .choose-block-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
+    .choose-block-content {
+        gap: 15px;
+    }
+    
+    .choose-block-content-item {
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .choose-block-content-item-image {
+        height: 80px;
+    }
+    
+    .choose-block-content-item-title-text {
+        font-size: 16px;
+    }
+    
+    .choose-block-content-item-title-description {
+        font-size: 12px;
+    }
+    
+    .choose-block-button {
+        width: 100%;
+        padding: 10px 16px;
+        font-size: 11px;
+    }
+}

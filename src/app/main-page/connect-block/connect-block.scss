@@ -55,3 +55,95 @@
     border: none;
     cursor: pointer;
 }
+
+/* 1050px Tablet Landscape */
+@media screen and (max-width: 1049px) {
+    .connect-block-container {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    
+    .connect-block-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+/* 820px Tablet Landscape */
+@media screen and (max-width: 820px) {
+    .connect-block-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .connect-block-description {
+        font-size: 16px;
+    }
+}
+
+/* 768px Tablet Portrait */
+@media screen and (max-width: 768px) {
+    .connect-block-wrapper {
+        padding: var(--content-padding-y) var(--content-padding-x);
+    }
+    
+    .connect-block-container {
+        padding: 30px;
+        border-radius: 8px;
+    }
+    
+    .connect-block-button {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+}
+
+/* 640px Mobile Landscape */
+@media screen and (max-width: 640px) {
+    .connect-block-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .connect-block-description {
+        font-size: 14px;
+    }
+    
+    .connect-block-button {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+}
+
+/* 480px Mobile */
+@media screen and (max-width: 480px) {
+    .connect-block-wrapper {
+        padding: var(--content-padding-y) var(--content-padding-x);
+    }
+    
+    .connect-block-container {
+        padding: 20px;
+        border-radius: 6px;
+    }
+    
+    .connect-block-content {
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .connect-block-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
+    .connect-block-description {
+        font-size: 12px;
+    }
+    
+    .connect-block-button {
+        width: 100%;
+        padding: 10px 16px;
+        font-size: 11px;
+    }
+}
