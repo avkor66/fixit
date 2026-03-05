@@ -1,59 +1,59 @@
-# Fixit
+# ФиксИТ
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
+Этот проект был создан с использованием [Angular CLI](https://github.com/angular/angular-cli) версии 20.3.1.
 
-## Development server
+## Сервер разработки
 
-To start a local development server, run:
+Для запуска локального сервера разработки выполните:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+После запуска сервера откройте браузер и перейдите на `http://localhost:4200/`. Приложение будет автоматически перезагружаться при любых изменениях исходных файлов.
 
-## Code scaffolding
+## Создание кода
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Angular CLI включает мощные инструменты для создания кода. Для генерации нового компонента выполните:
 
 ```bash
 ng generate component component-name
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Для полного списка доступных схем (таких как `components`, `directives` или `pipes`) выполните:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+## Сборка
 
-To build the project run:
+Для сборки проекта выполните:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Это скомпилирует ваш проект и сохранит артефакты сборки в папке `dist/`. По умолчанию сборка для продакшена оптимизирует приложение по производительности и скорости.
 
-## Running unit tests
+## Запуск модульных тестов
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Для выполнения модульных тестов с помощью средства запуска [Karma](https://karma-runner.github.io) используйте следующую команду:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## Запуск сквозных тестов
 
-For end-to-end (e2e) testing, run:
+Для сквозного тестирования (e2e) выполните:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Angular CLI не поставляется с платформой для сквозного тестирования по умолчанию. Вы можете выбрать подходящую для ваших нужд.
 
-## Additional Resources
+## Дополнительные ресурсы
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Для получения дополнительной информации об использовании Angular CLI, включая подробные справочные материалы команд, посетите страницу [Обзор и справочник команд Angular CLI](https://angular.dev/tools/cli).
